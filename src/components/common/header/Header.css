@@ -1,0 +1,175 @@
+/* HEADER STYLES */
+header {
+    background-color: #fff;
+    height: 10vh;
+    box-shadow: 0 5px 30px rgba(0, 22, 84, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img {
+    height: 6vh;
+    width: auto;
+}
+
+/* NAVIGATION */
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    margin-left: 0;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: rgb(69, 220, 69);
+}
+
+/* BUTTONS */
+.button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.button h4 {
+    font-weight: 500;
+}
+
+.button h4 span {
+    width: auto;
+    padding: 0 6px;
+    background-color: rgb(69, 220, 69);
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 4px;
+    font-weight: 400;
+}
+
+button.btn1 {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgb(69, 220, 69);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button.btn1 i {
+    margin-right: 5px;
+}
+
+button.btn1:hover {
+    background-color: rgb(50, 180, 50);
+}
+
+/* TOGGLE BUTTON */
+.toggle {
+    display: none;
+}
+
+.toggle button {
+    padding: 6px;                  
+    width: 35px;                    
+    height: 35px;                   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.toggle i {
+    font-size: 1.2rem;
+    color: black; 
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* Container adjustments */
+    .container {
+        justify-content: space-between;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    /* Hide buttons on mobile */
+    .button {
+        display: none;
+    }
+
+    /* Toggle button visible */
+    .toggle {
+        display: block;
+    }
+
+    /* Navigation hidden by default */
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh; /* below header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+    }
+
+    /* Show nav when active */
+    .nav.active {
+        display: flex;
+    }
+
+    /* Nav links stacked vertically on mobile */
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* Logo smaller on mobile */
+    .logo img {
+        height: 5vh;
+    }
+}
+
+/* smaller toggle for very small screens */
+@media screen and (max-width: 480px) {
+    .toggle button {
+        width: 30px;
+        height: 30px;
+    }
+    .toggle i {
+        font-size: 1rem;
+    }
+}
