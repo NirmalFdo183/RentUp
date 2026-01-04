@@ -1,0 +1,107 @@
+.featured {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f7f9;
+    padding: 40px 0;
+}
+
+.featured > .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.featured .heading {
+    width: 100%;
+    text-align: center;
+}
+
+.featured .heading h1 {
+    font-size: clamp(22px, 4vw, 42px); 
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+    white-space: nowrap;              
+}
+
+.featured .heading h3 {
+    font-size: clamp(14px, 2.5vw, 22px);
+    font-weight: 400;
+    color: #555;
+    margin-top: 8px;
+}
+
+.featured-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.FeatureCard {
+    width: 30%;                      
+    min-width: 260px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.FeatureCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+.FeatureCard img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.FeatureCard h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin: 6px 0;
+}
+
+.FeatureCard h5 {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .FeatureCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .FeatureCard {
+        width: 85%;
+    }
+
+    .FeatureCard img {
+        width: 75px;
+        height: 75px;
+    }
+}
