@@ -4,7 +4,7 @@ import Heading from '../../common/Heading'
 import './featured.css'
 import FeaturedCard from './featuredCard.jsx'
 
-import { featured } from '../../data/data.js'
+import { featured } from '../../data/Data.js'
 
 const Featured = () => {
   return (
