@@ -109,8 +109,27 @@ export const list = [
     type: "Apartment",
   },
 ]
-export const award = [
-    
+export const awards = [
+  {
+    icon: "fa-solid fa-trophy",
+    num: "32 M",
+    name: "Blue Burmin Award",
+  },
+  {
+    icon: "fa-solid fa-briefcase",
+    num: "43 M",
+    name: "Mimo X11 Award",
+  },
+  {
+    icon: "fa-solid fa-lightbulb",
+    num: "51 M",
+    name: "Australian UGC Award",
+  },
+  {
+    icon: "fa-solid fa-heart",
+    num: "42 M",
+    name: "IITCA Green Award",
+  },
 ]
 export const location = [
     
