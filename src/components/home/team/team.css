@@ -1,0 +1,135 @@
+.team {
+  width: 100%;
+  padding: 0px 8% 60px;
+  background : linear-gradient(180deg, #065f46, #022c22);
+}
+
+.team .heading-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team .heading h1 {
+  color: #ecfdf5;
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 700;
+}
+
+.team .heading h3 {
+  color: #a7f3d0;
+  max-width: 720px;
+  margin: 12px auto 0;
+  line-height: 1.6;
+}
+
+.team .heading-container p {
+  display: inline-block;
+  background-color: #e8f5e9;   
+  color: #1b5e20;          
+  font-size: 15px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  line-height: 1.6;
+}
+
+
+.team .team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.team .card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.team .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+.team .card .listing {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.team .card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 18px;
+  border: 4px solid #e8f5e9;
+}
+
+
+.team .card span {
+  display: block;
+}
+
+.team .card span:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 6px;
+}
+
+.team .card span:nth-of-type(3) {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 18px;
+}
+
+
+.team .socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.team .socialmedia a {
+  width: 38px;
+  height: 38px;
+  background-color: #f1f1f1;
+  color: #111111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.team .socialmedia a:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 60px 5%;
+  }
+
+  .team .heading-container h1 {
+    font-size: 30px;
+  }
+
+  .team .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
