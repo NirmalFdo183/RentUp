@@ -11,7 +11,7 @@ const RecentCard = ({ cover, name, location, category, price, type }) => {
       <div className="content">
         <h4>{name}</h4>
 
-        <p className="location">
+        <p className="locate">
           <i className="fa-solid fa-location-dot"></i>
           {location}
         </p>
