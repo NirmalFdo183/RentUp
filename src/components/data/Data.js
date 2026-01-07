@@ -183,8 +183,50 @@ export const location = [
     cover: "./images/location/city-6.png",
   },
 ]
+
 export const team = [
-    
+  {
+    list: "50",
+    cover: "../images/team/team-1.jpg",
+    address: "Liverpool, Canada",
+    name: "Sargam S. Singh",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
+  {
+    list: "70",
+    cover: "../images/team/team-2.jpg",
+    address: "Montreal, Canada",
+    name: "Harijeet M. Siller",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
+  {
+    list: "80",
+    cover: "../images/team/team-3.jpg",
+    address: "Denever, USA",
+    name: "Anna K. Young",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
+  {
+    list: "51",
+    cover: "../images/team/team-4.jpg",
+    address: "2272 Briarwood Drive",
+    name: "Michael P. Grimaldo",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
+  {
+    list: "42",
+    cover: "../images/team/team-5.jpg",
+    address: "2272 Briarwood Drive",
+    name: "Michael P. Grimaldo",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
+  {
+    list: "38",
+    cover: "../images/team/team-6.jpg",
+    address: "Montreal, USA",
+    name: "Akelia K. Marcella",
+    link: ['www.facebook.com', 'www.linkedin.com', 'www.twitter.com', 'www.instagram.com'],
+  },
 ]
 export const price = [
     
