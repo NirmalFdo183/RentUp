@@ -5,6 +5,7 @@ import Featured from './featured/featured.jsx'
 import Recent from './recent/Recent.jsx'
 import Awards from './awards/Awards.jsx'
 import Location from './location/Location.jsx'
+import Team from './team/Team.jsx'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Recent />
         <Awards />
         <Location />
+        <Team />
     </>
   )
 }
