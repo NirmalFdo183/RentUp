@@ -6,16 +6,18 @@ import Recent from './recent/Recent.jsx'
 import Awards from './awards/Awards.jsx'
 import Location from './location/Location.jsx'
 import Team from './team/Team.jsx'
+import Footer from '../common/footer/Footer.jsx'
 
 const Home = () => {
   return (
     <>
-        <Hero />
-        <Featured />
-        <Recent />
-        <Awards />
-        <Location />
-        <Team />
+      <Hero />
+      <Featured />
+      <Recent />
+      <Awards />
+      <Location />
+      <Team />
+      <Footer />
     </>
   )
 }
