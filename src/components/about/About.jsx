@@ -1,16 +1,17 @@
 import React from "react";
 import Back from "../common/Back";
 import Heading from "../common/Heading";
-import img from "../images/about.jpg";
-import immio from "../images/immio.jpg";
+import img from "../../../public/images/about/about.jpg";
+import immio from "../../../public/images/immio.jpg";
+import Footer from "../common/footer/Footer";
 import "./about.css";
 
 const About = () => {
   return (
+    <>
     <section className="about">
       <Back name="About Us" title="About Us - Who We Are?" cover={img} />
 
-     
       <div className="about-container">
         
         <div className="left row">
@@ -46,6 +47,8 @@ const About = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import Header from "../common/header/Header";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "../../components/home/Home.jsx";
-import About from "../../components/pages/About.jsx";
+import About from "../../components/about/About.jsx";
 
 const Page = () => {
   return (

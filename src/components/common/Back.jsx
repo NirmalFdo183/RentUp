@@ -4,7 +4,7 @@ const Back = ({ name, title, cover }) => {
   return (
     <>
       <div className='back'>
-        <div className='container'>
+        <div className='back-container'>
           <span>{name}</span>
           <h1>{title}</h1>
         </div>
