@@ -2,7 +2,7 @@ import React from 'react'
 
 import Heading from '../../common/Heading'
 import './featured.css'
-import FeaturedCard from './featuredCard.jsx'
+import FeaturedCard from '../featured/FeaturedCard.jsx'
 
 import { featured } from '../../data/Data.js'
 
