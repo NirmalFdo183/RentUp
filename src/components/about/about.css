@@ -1,0 +1,127 @@
+.about .back {
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1d; 
+}
+.about .back img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.6; 
+}
+
+.about .back-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about .back-container span {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #27ae60; 
+}
+
+.about .back-container h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.about .about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about .about-container .row {
+  width: 50%;
+}
+
+.about .heading {
+  margin-bottom: 25px;
+}
+
+.about .heading h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a2e24; 
+  margin-bottom: 5px;
+}
+
+.about .heading h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #27ae60; 
+}
+
+.about .left p {
+  color: #5c727d;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about .btn2 {
+  background-color: #27ae60;
+  color: #ffffff;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid #27ae60;
+}
+
+.about .btn2:hover {
+  background-color: #ffffff;
+  color: #27ae60;
+}
+
+.about .right img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 20px 20px 0px #f1f8f5; 
+  border: 1px solid #e1e8e4;
+}
+
+@media (max-width: 800px) {
+  .about .about-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .about .about-container .row {
+    width: 100%;
+  }
+
+  .about .right {
+    order: -1; 
+  }
+
+  .about .back-container h1 {
+    font-size: 2rem;
+  }
+
+  .about .heading h1 {
+    font-size: 28px;
+  }
+}
