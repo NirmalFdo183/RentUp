@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "../../components/home/Home.jsx";
 import About from "../../components/about/About.jsx";
+import Services from "../services/Services.jsx";
 
 const Page = () => {
   return (
@@ -11,7 +12,7 @@ const Page = () => {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
-        <Route path="/services" element={<services/>}/>
+        <Route path="/services" element={<Services/>}/>
         <Route path="/blog" element={<blog/>}/>
         <Route path="/pricing" element={<pricing/>}/>
         <Route path="/contact" element={<contact/>}/>
