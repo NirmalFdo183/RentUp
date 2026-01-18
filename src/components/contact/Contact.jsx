@@ -3,6 +3,8 @@ import img from "../../../public/images/pricing/pricing.jpg"
 import Back from "../common/Back"
 import "../contact/contact.css"
 
+import Footer from '../common/footer/Footer.jsx'
+
 const Contact = () => {
   return (
     <>
@@ -21,6 +23,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <Footer/>
     </>
   )
 }
