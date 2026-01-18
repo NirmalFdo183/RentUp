@@ -1,0 +1,154 @@
+.contact {
+  display: block;
+  width: 100%;
+  background-color: #f8faf9; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.contact .back {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+
+.contact .back img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; 
+  filter: brightness(0.5); 
+}
+
+
+.contact .back-container {
+  position: relative;
+  z-index: 5; 
+  color: #ffffff;
+}
+
+.contact .back-container span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #27ae60; 
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact .back-container h1 {
+  font-size: 45px;
+  margin: 0;
+  font-weight: 700;
+}
+
+
+.contact .contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px; 
+  display: flex;
+  justify-content: center; 
+  position: relative;
+  z-index: 10;
+}
+
+.contact .shadow {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px; 
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e8e4;
+}
+
+.contact .shadow h4 {
+  font-size: 26px;
+  color: #1a2e24; 
+  margin-bottom: 20px;
+}
+
+
+.contact .shadow div {
+  display: flex;
+  gap: 20px;
+}
+
+
+.contact .shadow input, 
+.contact .shadow textarea {
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  border: 1px solid #e1e8e4;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact .shadow input:focus, 
+.contact .shadow textarea:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.1);
+}
+
+.contact .shadow textarea {
+  min-height: 180px;
+}
+
+
+.contact .shadow button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 18px;
+  background-color: #27ae60; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .shadow button:hover {
+  background-color: #1a2e24; 
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+  .contact .back {
+    height: 300px;
+  }
+
+  .contact .back-container h1 {
+    font-size: 30px;
+  }
+
+  .contact .shadow {
+    padding: 30px 20px;
+  }
+
+  .contact .shadow div {
+    flex-direction: column; 
+    gap: 0;
+  }
+
+  .contact .contact-container {
+    padding: 40px 20px;
+  }
+}
